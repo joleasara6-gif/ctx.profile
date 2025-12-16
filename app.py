@@ -52,8 +52,8 @@ def get_profile_image_tiny():
             return 'Error => Cannot create image!', 400
         original_img = Image.open(BytesIO(img_response.content))
         
-        TINY_WIDTH = 800
-        TINY_HEIGHT = 450 
+        TINY_WIDTH = 1200
+        TINY_HEIGHT = 200 
 
         original_width, original_height = original_img.size
         original_ratio = original_width / original_height
